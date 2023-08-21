@@ -14,12 +14,24 @@ class _SignUpState extends State<SignUp> {
         body: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        TextField(
-          decoration: InputDecoration(border: OutlineInputBorder(),hintText: "Full Name"),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: TextField(
+            decoration: InputDecoration(border: OutlineInputBorder(),hintText: "Full Name"),
+          ),
         ),
-        TextField(decoration: InputDecoration(border: OutlineInputBorder(),hintText: "Age"),),
-        TextField(decoration: InputDecoration(border: OutlineInputBorder(),hintText: "Phone ")),
-        ElevatedButton(onPressed: () {}, child: Text("submit"))
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: TextField(decoration: InputDecoration(border: OutlineInputBorder(),hintText: "Age"),),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: TextField(decoration: InputDecoration(border: OutlineInputBorder(),hintText: "Phone ")),
+        ),
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: ElevatedButton(onPressed: () {}, child: Text("submit")),
+        )
       ],
     ));
   }
